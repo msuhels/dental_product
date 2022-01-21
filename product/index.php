@@ -17,6 +17,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
+      body{
+        overflow-x: hidden;
+      }
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -142,7 +145,7 @@
   <div class="col-lg-8" style="margin-top: 100px;">
     <h2>Barra</h2>
    <p class="">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
-    <form>
+    <form method="get" action="../checkout/checkout.php">
   <div class="form-group row" style="margin-top: 20px;">
     <label for="staticEmail" class="col-sm-3">Product Name:</label>
     <div class="col-sm-7">
@@ -243,12 +246,13 @@
     </div>
   </div>
   <div class="form-group row" style="margin-top: 20px;">
-        <label for="inputPassword" class="col-sm-3"></label>
+        <label for="inputPassword" class="col-sm-3" style="color: #45c4fa;font-weight: 600;">    Total Price: $<span class="total"></span></label>
     <div class="col-sm-3">
-       <a href="../checkout/checkout.php?price=1000" class="btn btn-primary" type="submit">Add to cart</a>
+       <button class="btn btn-primary" type="submit">Add to cart</button>
     </div>
  
   </div>
+  <input type="hidden" name="price" class="price" value="">
 </form>
 
   </div>
@@ -272,30 +276,47 @@
      
          $(document).on('click', '.addCF', function(e) {
          var id = $(this).attr('id');
+         
         // alert(id);
           $('#'+id).addClass('teeth-color');
           $('#'+id).removeClass('addCF');
           $('#'+id).addClass('remCF');
 
          // alert(id);
-         $("#customFields").append('<tr valign="top" style="margin-top:10px;" id="id_'+id+'"><td style="width: 27%;"><a href="javascript:void(0);" class="button button5">'+id+'</a></td><td><select id="inputState" class="form-select"><option selected>Option 1</option><option>Option 2</option></select></td><td><select id="inputState" class="form-select"><option selected>Option 1</option><option>Option 2</option></select></td><td><select id="inputState" class="form-select"><option selected>Option 1</option><option>Option 2</option></select></td></tr>');    
-                       
-    });
+         $("#customFields").append('<tr valign="top" style="margin-top:10px;" id="id_'+id+'"><td style="width: 27%;"><a href="javascript:void(0);" class="button button5">'+id+'</a></td><td><input type="hidden"  id="price_'+id+'" class="amount" value="500" ><select id="inputState" class="form-select"><option selected>Option 1</option><option>Option 2</option></select></td><td><select id="inputState" class="form-select"><option selected>Option 1</option><option>Option 2</option></select></td><td><select id="inputState" class="form-select"><option selected>Option 1</option><option>Option 2</option></select></td></tr>'); 
+          var tid = $(this).attr('id');
+          var qty = $('#price_'+tid).val();
+          var total = 0;
+          $('.amount').each(function(i, e) {
+            var amt = 50;
+            total += amt;
+          });
+          $('.total').html(total);
+          $("input[name='price']").val(total);
+
+                            
+     });
          
 
 
-$(document).on('click', '.remCF', function(e) {
+   $(document).on('click', '.remCF', function(e) {
    event.preventDefault();
-// alert();
- var tr = $(this).parent().parent();
-            var tid = $(this).attr('id');
-            // console.log(tid);
-            $('#id_'+tid).remove();
-            $('#'+tid).removeClass('teeth-color');
-            $('#'+tid).removeClass('remCF');
-            $('#'+tid).addClass('addCF');
+   var tr = $(this).parent().parent();
+   var tid = $(this).attr('id');
+      $('#id_'+tid).remove();
+      $('#'+tid).removeClass('teeth-color');
+      $('#'+tid).removeClass('remCF');
+      $('#'+tid).addClass('addCF');
+      var tid   = $(this).attr('id');
+      var qty   = $('#price_'+tid).val();
+      var amt   =  $('.total').html();
+      var total = 0;
+      total = amt - 50;
+      $('.total').html(total);
+      $("input[name='price']").val(total);
+            // alert(total); 
 
- });
+   });
  });  
 
   </script>
