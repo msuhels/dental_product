@@ -56,7 +56,7 @@ $price = $_GET['price'];
           <span class="badge bg-primary rounded-pill">3</span>
         </h4>
         <ul class="list-group mb-3">
-          <li class="list-group-item d-flex justify-content-between lh-sm">
+         <!--  <li class="list-group-item d-flex justify-content-between lh-sm">
             <div>
               <h6 class="my-0">Product name</h6>
               <small class="text-muted">Brief description</small>
@@ -83,9 +83,9 @@ $price = $_GET['price'];
               <small>EXAMPLECODE</small>
             </div>
             <span class="text-success">−$5</span>
-          </li>
+          </li> -->
           <li class="list-group-item d-flex justify-content-between">
-            <span>Total (USD)</span>
+            <span>Total</span>
             <strong>$ <?php print_r($price); ?></strong>
           </li>
         </ul>

@@ -247,8 +247,8 @@
   </div>
   <div class="form-group row" style="margin-top: 20px;">
         <label for="inputPassword" class="col-sm-3" style="color: #45c4fa;font-weight: 600;">    Total Price: $<span class="total"></span></label>
-    <div class="col-sm-3">
-       <button class="btn btn-primary" type="submit">Add to cart</button>
+    <div class="col-sm-7">
+       <button class="btn btn-primary" type="submit">Proceed to Checkout</button>
     </div>
  
   </div>
