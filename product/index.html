@@ -35,10 +35,6 @@
         stroke:  rgba(0, 0, 255, 0.83)!important;
         fill-opacity: 0.5!important; 
       }
-      path { stroke: black !important;;
-        stroke-opacity: 0.6 !important;;
-        stroke-width: 2.5px !important;;
-       }
       .button5 {border-radius: 50%;}
       .button {
         background-color: #40c4fa;
@@ -65,12 +61,12 @@
     <link href="form-validation.css" rel="stylesheet">
   </head>
   <body class="bg-light">
-   
+    
 <div class="row">
   <div class="col-lg-4">
      <!-- <img class="d-block mx-auto mb-4" src="../assets/mouth.png" alt=""> -->
      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300px" height="500px" viewBox="0 0 1145 1800" xml:space="preserve" style="margin-top: 100px;">
-      <image overflow="visible" width="1145" height="1800" xlink:href="../assets/mouth1.png"></image>
+      <image overflow="visible" width="1145" height="1800" xlink:href="../assets/mouth.png"></image>
     <path id="d1" class="addCF" vector-effect="non-scaling-stroke" d="M187.333,722.667c28.357,2.767,79.105,16.333,73.333,65c-6.214,52.389-41,58-86,51.667s-71.667-14-64-66S160,720,187.333,722.667z" fill="red" fill-opacity="0" stroke="red" stroke-opacity="1" cursor="pointer" style="fill: red; fill-opacity: 0; stroke: red; stroke-opacity: 1;"></path>
 
     <path id="d2" class="addCF" vector-effect="non-scaling-stroke" d="M195.667,600.333c45.083,9.167,56.392,18.335,65.588,37.333c8.996,18.583,10.996,63.333-21.921,76c-21.99,8.462-42.333,3.25-57.333,1.583s-58.273-2.401-63-51.25c-3.75-38.75,31-60.667,40.333-63.667S189.77,599.134,195.667,600.333z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer" style="fill: rgb(255, 0, 0); fill-opacity: 0; stroke: rgb(255, 0, 0); stroke-opacity: 1;"></path>
@@ -137,7 +133,7 @@
       
       <g id="mt_spots"></g>
     </svg>
- 
+
   </div>
   <div class="col-lg-8" style="margin-top: 100px;">
     <h2>Barra</h2>
@@ -179,7 +175,7 @@
    <div class="row col-md-12" >
     <div class="col-md-3 mb-3">
       <label for="validationCustom01" style="color: #40bffb;
-    font-weight: 500;"></label>
+    font-weight: 500;">Add Row</label>
      
     </div>
     <div class="col-md-3 mb-3">
@@ -200,27 +196,40 @@
     </div>
   </div>
 
-   <div class="row col-md-12" style="margin-top: 20px;">
-    <table class="form-table" id="customFields">
-     <!--  <tr valign="top" style="margin-top:10px;">
-          <td style="width: 27%;">
-             <a href="javascript:void(0);" class="button button5"></a>
-          </td>
-          <td>
-            <select id="inputState" class="form-select"><option selected>Option 1</option><option>Option 2</option></select>
-          </td>
-          <td>
-            <select id="inputState" class="form-select"><option selected>Option 1</option><option>Option 2</option></select>
-          </td>
-          <td>
-            <select id="inputState" class="form-select"><option selected>Option 1</option><option>Option 2</option></select>
-          </td>
-          </tr> -->
-    </table>
+   <div class="row col-md-12" id="customFields" style="margin-top: 20px;">
+    <div class="row col-md-12" style="display: none;">
+     <div class="col-md-2 mb-3">
+        <a href="javascript:void(0);" id="addCF" class="btn"><i class="fa fa-plus-square" aria-hidden="true" style="color: #0fa260;font-size: 22px;"></i></a>
+     </div>
+      <div class="col-md-3 mb-3">
+         <select  class="form-select">
+          <option selected>Option 1</option>
+          <option>Option 2</option>
+        
+         
+        </select>
+      </div>
+      <div class="col-md-3 mb-3">
+         <select  class="form-select">
+          <option selected>Option 1</option>
+          <option>Option 2</option>
+       
+         
+        </select>
+      </div>
+      <div class="col-md-3 mb-3">
+         <select  class="form-select">
+          <option selected>Option 1</option>
+          <option>Option 2</option>
+      
+         
+        </select>
+      </div>
+</div>
    </div>
    <div class="form-group row" style="margin-top: 30px;">
-    <label for="inputPassword" class="col-sm-3">Services:</label>
-    <div class="col-sm-7 form-group">
+    <label for="inputPassword" class="col-sm-2">Services:</label>
+    <div class="col-sm-6 form-group">
        <select id="inputState" class="form-select">
         <option value="">Service 1</option>
         <option>Service 2</option>
@@ -231,8 +240,8 @@
     </div>
   </div>  
   <div class="form-group row" style="margin-top: 20px;">
-    <label for="inputPassword" class="col-sm-3">Variety:</label>
-    <div class="col-sm-7 form-group">
+    <label for="inputPassword" class="col-sm-2">Variety:</label>
+    <div class="col-sm-6 form-group">
        <select id="inputState" class="form-select">
         <option selected>Variety 1</option>
         <option>Variety 2</option>
@@ -241,13 +250,6 @@
 
       </select>
     </div>
-  </div>
-  <div class="form-group row" style="margin-top: 20px;">
-        <label for="inputPassword" class="col-sm-3"></label>
-    <div class="col-sm-3">
-       <a href="../checkout/checkout.php?price=1000" class="btn btn-primary" type="submit">Add to cart</a>
-    </div>
- 
   </div>
 </form>
 
@@ -269,34 +271,26 @@
    <script src="form-validation.js"></script>
    <script type="text/javascript">
      $(document).ready(function(){
-     
-         $(document).on('click', '.addCF', function(e) {
-         var id = $(this).attr('id');
-        // alert(id);
+         $(".addCF").click(function(){
+          var id = $(this).attr('id');
           $('#'+id).addClass('teeth-color');
-          $('#'+id).removeClass('addCF');
-          $('#'+id).addClass('remCF');
 
          // alert(id);
-         $("#customFields").append('<tr valign="top" style="margin-top:10px;" id="id_'+id+'"><td style="width: 27%;"><a href="javascript:void(0);" class="button button5">'+id+'</a></td><td><select id="inputState" class="form-select"><option selected>Option 1</option><option>Option 2</option></select></td><td><select id="inputState" class="form-select"><option selected>Option 1</option><option>Option 2</option></select></td><td><select id="inputState" class="form-select"><option selected>Option 1</option><option>Option 2</option></select></td></tr>');    
-                       
-    });
-         
-
-
-$(document).on('click', '.remCF', function(e) {
-   event.preventDefault();
-// alert();
- var tr = $(this).parent().parent();
+         $("#customFields").append('<div class="row col-md-12"><div class="col-md-3 mb-3"><a href="javascript:void(0);" id="'+id+'"  class="remCF button button5">'+id+'</a></div><div class="col-md-3 mb-3"><select id="inputState" class="form-select"><option selected>Option 1</option><option>Option 2</option></select></div><div class="col-md-3 mb-3"><select id="inputState" class="form-select"><option selected>Option 1</option><option>Option 2</option></select></div><div class="col-md-3 mb-3"><select id="inputState" class="form-select"><option selected>Option 1</option><option>Option 2</option></select></div></div>');    
+        
+         $(".remCF").on('click',function(){
+            var tr = $(this).parent().parent();
             var tid = $(this).attr('id');
-            // console.log(tid);
-            $('#id_'+tid).remove();
+            console.log(tr);
+            tr.remove();
             $('#'+tid).removeClass('teeth-color');
-            $('#'+tid).removeClass('remCF');
-            $('#'+tid).addClass('addCF');
+         
+        });
+        
+    });
+});
 
- });
- });  
+
 
   </script>
   </body>
