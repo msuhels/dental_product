@@ -16,6 +16,8 @@
 <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="..\assets\dist\js\product.js"></script>
+
     <style>
       body{
         overflow-x: hidden;
@@ -74,39 +76,39 @@
      <!-- <img class="d-block mx-auto mb-4" src="../assets/mouth.png" alt=""> -->
      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300px" height="500px" viewBox="0 0 1145 1800" xml:space="preserve" style="margin-top: 100px;">
       <image overflow="visible" width="1145" height="1800" xlink:href="../assets/mouth1.png"></image>
-    <path id="d1" class="addCF" vector-effect="non-scaling-stroke" d="M187.333,722.667c28.357,2.767,79.105,16.333,73.333,65c-6.214,52.389-41,58-86,51.667s-71.667-14-64-66S160,720,187.333,722.667z" fill="red" fill-opacity="0" stroke="red" stroke-opacity="1" cursor="pointer" style="fill: red; fill-opacity: 0; stroke: red; stroke-opacity: 1;"></path>
+    <path id="d1" class="addCF top_teeth" vector-effect="non-scaling-stroke" d="M187.333,722.667c28.357,2.767,79.105,16.333,73.333,65c-6.214,52.389-41,58-86,51.667s-71.667-14-64-66S160,720,187.333,722.667z" fill="red" fill-opacity="0" stroke="red" stroke-opacity="1" cursor="pointer" style="fill: red; fill-opacity: 0; stroke: red; stroke-opacity: 1;"></path>
 
-    <path id="d2" class="addCF" vector-effect="non-scaling-stroke" d="M195.667,600.333c45.083,9.167,56.392,18.335,65.588,37.333c8.996,18.583,10.996,63.333-21.921,76c-21.99,8.462-42.333,3.25-57.333,1.583s-58.273-2.401-63-51.25c-3.75-38.75,31-60.667,40.333-63.667S189.77,599.134,195.667,600.333z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer" style="fill: rgb(255, 0, 0); fill-opacity: 0; stroke: rgb(255, 0, 0); stroke-opacity: 1;"></path>
+    <path id="d2" class="addCF top_teeth" vector-effect="non-scaling-stroke" d="M195.667,600.333c45.083,9.167,56.392,18.335,65.588,37.333c8.996,18.583,10.996,63.333-21.921,76c-21.99,8.462-42.333,3.25-57.333,1.583s-58.273-2.401-63-51.25c-3.75-38.75,31-60.667,40.333-63.667S189.77,599.134,195.667,600.333z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer" style="fill: rgb(255, 0, 0); fill-opacity: 0; stroke: rgb(255, 0, 0); stroke-opacity: 1;"></path>
 
-    <path id="d3" class="addCF" vector-effect="non-scaling-stroke" d="M189.667,478c23.44-5,78.334,18.667,88.667,33.667s14.005,54.285-2,73.333c-15.333,18.25-46.961,21.396-83.974,9.333c-38.61-12.583-48.183-25.931-47.026-63.667C146.25,500.75,178.28,480.429,189.667,478z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer" style="fill: rgb(255, 0, 0); fill-opacity: 0; stroke: rgb(255, 0, 0); stroke-opacity: 1;"></path>
+    <path id="d3" class="addCF top_teeth" vector-effect="non-scaling-stroke" d="M189.667,478c23.44-5,78.334,18.667,88.667,33.667s14.005,54.285-2,73.333c-15.333,18.25-46.961,21.396-83.974,9.333c-38.61-12.583-48.183-25.931-47.026-63.667C146.25,500.75,178.28,480.429,189.667,478z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer" style="fill: rgb(255, 0, 0); fill-opacity: 0; stroke: rgb(255, 0, 0); stroke-opacity: 1;"></path>
 
-    <path id="d4" class="addCF" vector-effect="non-scaling-stroke" d="M211.333,384.667c15.851-4.267,50,5.333,66.667,15s28.667,16.334,33,34.667s6.063,44.37-26.333,49.333c-29.917,4.583-44.579-2.959-59.667-7.333c-19.733-5.72-47.949-6.648-46-52C180.25,395.25,202.667,387,211.333,384.667z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer" style="fill: rgb(255, 0, 0); fill-opacity: 0; stroke: rgb(255, 0, 0); stroke-opacity: 1;"></path>
+    <path id="d4" class="addCF top_teeth" vector-effect="non-scaling-stroke" d="M211.333,384.667c15.851-4.267,50,5.333,66.667,15s28.667,16.334,33,34.667s6.063,44.37-26.333,49.333c-29.917,4.583-44.579-2.959-59.667-7.333c-19.733-5.72-47.949-6.648-46-52C180.25,395.25,202.667,387,211.333,384.667z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer" style="fill: rgb(255, 0, 0); fill-opacity: 0; stroke: rgb(255, 0, 0); stroke-opacity: 1;"></path>
 
-    <path id="d5" class="addCF" vector-effect="non-scaling-stroke" d="M235,297.667c10.278-11.146,41-16.667,68,3s46.333,33.667,42.667,60.667S324.413,395.184,306,396.667c-27.278,2.196-47.5-15.074-59.874-22.333C224.25,361.5,195.5,340.5,235,297.667z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
+    <path id="d5" class="addCF top_teeth" vector-effect="non-scaling-stroke" d="M235,297.667c10.278-11.146,41-16.667,68,3s46.333,33.667,42.667,60.667S324.413,395.184,306,396.667c-27.278,2.196-47.5-15.074-59.874-22.333C224.25,361.5,195.5,340.5,235,297.667z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
 
-    <path id="d6" class="addCF" vector-effect="non-scaling-stroke" d="M316.667,197.667C332.946,189.208,346.113,191,362,205c12.557,11.065,32.75,37.5,33.667,55.333c0.745,14.484,3.833,43.167-29.333,50.333c-25.449,5.499-34.667-1-61.333-18.667s-39.5-37-23.004-62.333C296.882,206.806,304.36,204.061,316.667,197.667z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
+    <path id="d6" class="addCF top_teeth" vector-effect="non-scaling-stroke" d="M316.667,197.667C332.946,189.208,346.113,191,362,205c12.557,11.065,32.75,37.5,33.667,55.333c0.745,14.484,3.833,43.167-29.333,50.333c-25.449,5.499-34.667-1-61.333-18.667s-39.5-37-23.004-62.333C296.882,206.806,304.36,204.061,316.667,197.667z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
 
-    <path id="d7" class="addCF" vector-effect="non-scaling-stroke" d="M377.333,143.667C400,128.25,450.798,115.112,461,162.333c11,50.917,2.667,76.333-18,83.333s-28,0.333-53.667-24S334.639,172.706,377.333,143.667z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
+    <path id="d7" class="addCF top_teeth" vector-effect="non-scaling-stroke" d="M377.333,143.667C400,128.25,450.798,115.112,461,162.333c11,50.917,2.667,76.333-18,83.333s-28,0.333-53.667-24S334.639,172.706,377.333,143.667z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
 
-    <path id="d8" class="addCF" vector-effect="non-scaling-stroke" d="M515.333,86.333c30.574-2.731,63,14.953,54.667,44.143S558.218,201.753,533.333,207c-26.083,5.5-39,1-54-24.667S429.5,94,515.333,86.333z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
+    <path id="d8" class="addCF top_teeth" vector-effect="non-scaling-stroke" d="M515.333,86.333c30.574-2.731,63,14.953,54.667,44.143S558.218,201.753,533.333,207c-26.083,5.5-39,1-54-24.667S429.5,94,515.333,86.333z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
 
-    <path id="d9" class="addCF" vector-effect="non-scaling-stroke" d="M638,87.667c38,1.083,60,26.667,41,70s-30.666,54.094-57.666,51.213s-32.569-24.316-40-52.213C572.5,123.5,558.436,85.399,638,87.667z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
+    <path id="d9" class="addCF top_teeth" vector-effect="non-scaling-stroke" d="M638,87.667c38,1.083,60,26.667,41,70s-30.666,54.094-57.666,51.213s-32.569-24.316-40-52.213C572.5,123.5,558.436,85.399,638,87.667z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
 
-    <path id="d10" class="addCF" vector-effect="non-scaling-stroke" d="M761.334,138.667c23.416,11.083,42.078,39.189,12.333,65.333c-34.417,30.25-44.1,56.458-75.667,38.667C673.75,229,680.379,191.383,682.334,175C684.75,154.75,696.08,107.782,761.334,138.667z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
+    <path id="d10" class="addCF top_teeth" vector-effect="non-scaling-stroke" d="M761.334,138.667c23.416,11.083,42.078,39.189,12.333,65.333c-34.417,30.25-44.1,56.458-75.667,38.667C673.75,229,680.379,191.383,682.334,175C684.75,154.75,696.08,107.782,761.334,138.667z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
 
-    <path id="d11" class="addCF" vector-effect="non-scaling-stroke" d="M854.001,215.667c26.999,28.583,19.485,52.364-11,74.667c-38.501,28.167-62.313,25.012-83,11.667c-8.082-5.214-11.636-22.309-10.717-36.779c0.843-13.283,5.612-23.882,10.717-31.221C770.667,218.667,803.173,161.856,854.001,215.667z" fill="red" fill-opacity="0" stroke="red" stroke-opacity="1" cursor="pointer"></path>
+    <path id="d11" class="addCF top_teeth" vector-effect="non-scaling-stroke" d="M854.001,215.667c26.999,28.583,19.485,52.364-11,74.667c-38.501,28.167-62.313,25.012-83,11.667c-8.082-5.214-11.636-22.309-10.717-36.779c0.843-13.283,5.612-23.882,10.717-31.221C770.667,218.667,803.173,161.856,854.001,215.667z" fill="red" fill-opacity="0" stroke="red" stroke-opacity="1" cursor="pointer"></path>
 
-    <path id="d12" class="addCF" vector-effect="non-scaling-stroke" d="M920.334,308.667c20.416,26.833,10.667,51.333-29,70.667c-26.889,13.105-36.834,20.167-59.76,16.723c-17.743-2.666-31.478-16.556-31.478-37.058c0-24.749,12.821-35.146,29.237-47.918C856.75,289.75,892.238,271.74,920.334,308.667z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
+    <path id="d12" class="addCF top_teeth" vector-effect="non-scaling-stroke" d="M920.334,308.667c20.416,26.833,10.667,51.333-29,70.667c-26.889,13.105-36.834,20.167-59.76,16.723c-17.743-2.666-31.478-16.556-31.478-37.058c0-24.749,12.821-35.146,29.237-47.918C856.75,289.75,892.238,271.74,920.334,308.667z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
 
-    <path id="d13" class="addCF" vector-effect="non-scaling-stroke" d="M961.667,403.667c7.966,11.79,9.157,32.558,1.954,47.264c-5.765,11.769-16.905,18.217-34.252,23.736c-38.398,12.218-80.369,17.833-94.702-7c-5.595-9.693-1.997-26.577,0.666-35.739c4.737-16.297,15.172-23.313,27.334-29.928C881.667,391.667,936.667,366.667,961.667,403.667z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
+    <path id="d13" class="addCF top_teeth" vector-effect="non-scaling-stroke" d="M961.667,403.667c7.966,11.79,9.157,32.558,1.954,47.264c-5.765,11.769-16.905,18.217-34.252,23.736c-38.398,12.218-80.369,17.833-94.702-7c-5.595-9.693-1.997-26.577,0.666-35.739c4.737-16.297,15.172-23.313,27.334-29.928C881.667,391.667,936.667,366.667,961.667,403.667z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
 
-    <path id="d14" class="addCF" vector-effect="non-scaling-stroke" d="M998.001,521.667C1008.75,552.5,989.25,582,972.334,589c-12.474,5.162-61.666,19-90.333,6.667S857,549.333,858.667,536s8.833-31,35-43.667c24.406-11.814,40.001-13.667,48.334-14.667S981.623,474.687,998.001,521.667z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
+    <path id="d14" class="addCF top_teeth" vector-effect="non-scaling-stroke" d="M998.001,521.667C1008.75,552.5,989.25,582,972.334,589c-12.474,5.162-61.666,19-90.333,6.667S857,549.333,858.667,536s8.833-31,35-43.667c24.406-11.814,40.001-13.667,48.334-14.667S981.623,474.687,998.001,521.667z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
 
-    <path id="d15" class="addCF" vector-effect="non-scaling-stroke" d="M1025.001,645.333c8.499,28.417-12.501,57.667-32.334,64.333c-21.269,7.15-60.832,7.866-72,7.333c-41.917-2-48.441-50.174-39-73.333c8.833-21.667,22.667-29,29.667-32s43.907-13.228,58.667-13.333C987,598.212,1013.28,606.145,1025.001,645.333z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path> 
+    <path id="d15" class="addCF top_teeth" vector-effect="non-scaling-stroke" d="M1025.001,645.333c8.499,28.417-12.501,57.667-32.334,64.333c-21.269,7.15-60.832,7.866-72,7.333c-41.917-2-48.441-50.174-39-73.333c8.833-21.667,22.667-29,29.667-32s43.907-13.228,58.667-13.333C987,598.212,1013.28,606.145,1025.001,645.333z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path> 
 
-    <path id="d16" class="addCF" vector-effect="non-scaling-stroke" d="M1035.001,771c3.999,35.5-0.251,61.75-65,68.667c-50.274,5.371-77.501-3.167-84.667-46.333c-5.343-32.182,10.667-61.333,63.667-69.667S1031.002,735.5,1035.001,771z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
+    <path id="d16" class="addCF top_teeth" vector-effect="non-scaling-stroke" d="M1035.001,771c3.999,35.5-0.251,61.75-65,68.667c-50.274,5.371-77.501-3.167-84.667-46.333c-5.343-32.182,10.667-61.333,63.667-69.667S1031.002,735.5,1035.001,771z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
 
-    <path id="d17" class="addCF" vector-effect="non-scaling-stroke" d="M1057.001,1068.667c-3.773,35.889-31.408,54.123-76,48.334c-52.001-6.751-80.916-32.24-73-70c9.749-46.501,37.666-56.666,86.666-47S1062.25,1018.75,1057.001,1068.667z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
+    <path id="d17" class="addCF bottom_teeth" vector-effect="non-scaling-stroke" d="M1057.001,1068.667c-3.773,35.889-31.408,54.123-76,48.334c-52.001-6.751-80.916-32.24-73-70c9.749-46.501,37.666-56.666,86.666-47S1062.25,1018.75,1057.001,1068.667z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
 
     <path id="d18" class="addCF" vector-effect="non-scaling-stroke" d="M1042.334,1193.334c-9.084,36.916-35.084,48-55,48c-21.084,0-69.667-14.333-82-33.333s-15.334-66.751,14.667-81c20.21-9.599,36.333-5.666,43.333-5s39.334,5.333,49.667,9.333S1051.403,1156.479,1042.334,1193.334z" fill="#FF0000" fill-opacity="0" stroke="#FF0000" stroke-opacity="1" cursor="pointer"></path>
 
@@ -156,11 +158,11 @@
    <label for="staticEmail" class="col-sm-3">Structure:</label>
    <div class="col-sm-7">
       <div class="form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked disabled>
+      <input class="form-check-input" type="radio" id="top_checkbox" value="top" name="teeth" checked>
       <label class="form-check-label" for="inlineCheckbox1">Top</label>
      </div>
      <div class="form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked disabled>
+      <input class="form-check-input" type="radio" id="bottom_checkbox" value="bottom" name="teeth">
       <label class="form-check-label" for="inlineCheckbox1">Bottom</label>
      </div>
    </div>
@@ -273,7 +275,22 @@
    <script src="form-validation.js"></script>
    <script type="text/javascript">
      $(document).ready(function(){
-     
+     var checked = $('input[name=teeth]:checked').val();
+        if(checked == 'top'){
+                for (var n = 10; n < 33; ++ n){
+                 $('#d'+n).hide();
+               }
+             }
+               if(checked == 'bottom'){
+                for (var n = 1; n < 17; ++ n){
+                 $('#d'+n).hide();
+               }
+               for (var n = 25; n < 33; ++ n){
+                 $('#d'+n).hide();
+               }
+               }
+
+
          $(document).on('click', '.addCF', function(e) {
          var id = $(this).attr('id');
          
@@ -296,7 +313,30 @@
 
                             
      });
-         
+    
+      $('input[type="radio"]').click(function() {
+        for (var n = 1; n < 33; ++ n){
+                 $('#d'+n).show();
+               }
+      var checked = $('input[name=teeth]:checked').val();
+      // alert(checked);
+              if(checked == 'top'){
+                for (var n = 10; n < 33; ++ n){
+                 $('#d'+n).hide();
+               }
+             }
+               if(checked == 'bottom'){
+                for (var n = 1; n < 17; ++ n){
+                 $('#d'+n).hide();
+               }
+               for (var n = 25; n < 33; ++ n){
+                 $('#d'+n).hide();
+               }
+               }
+
+            
+       });
+     
 
 
    $(document).on('click', '.remCF', function(e) {
