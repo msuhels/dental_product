@@ -285,7 +285,7 @@
                 for (var n = 1; n < 17; ++ n){
                  $('#d'+n).hide();
                }
-               for (var n = 25; n < 33; ++ n){
+               for (var n = 26; n < 33; ++ n){
                  $('#d'+n).hide();
                }
                }
@@ -313,7 +313,7 @@
 
                             
      });
-    
+    // show top bottom teeth code
       $('input[type="radio"]').click(function() {
         for (var n = 1; n < 33; ++ n){
                  $('#d'+n).show();
@@ -322,15 +322,38 @@
       // alert(checked);
               if(checked == 'top'){
                 for (var n = 10; n < 33; ++ n){
-                 $('#d'+n).hide();
+                $('#d'+n).hide();
+
+                var tid = 'd'+n;var total = 0;
+                $('#id_'+tid).remove();
+                $('#'+tid).removeClass('teeth-color');
+                $('#'+tid).removeClass('remCF');
+                $('#'+tid).addClass('addCF');
+
+                $('.total').html(total);
                }
-             }
+              
+            }
                if(checked == 'bottom'){
                 for (var n = 1; n < 17; ++ n){
                  $('#d'+n).hide();
+
+                var tid = 'd'+n;var total = 0;
+                $('#id_'+tid).remove();
+                $('#'+tid).removeClass('teeth-color');
+                $('#'+tid).removeClass('remCF');
+                $('#'+tid).addClass('addCF');
+                $('.total').html(total);
                }
-               for (var n = 25; n < 33; ++ n){
+               for (var n = 26; n < 33; ++ n){
                  $('#d'+n).hide();
+
+                var tid = 'd'+n;var total = 0;
+                $('#id_'+tid).remove();
+                $('#'+tid).removeClass('teeth-color');
+                $('#'+tid).removeClass('remCF');
+                $('#'+tid).addClass('addCF');
+                $('.total').html(total);
                }
                }
 
@@ -341,8 +364,8 @@
 
    $(document).on('click', '.remCF', function(e) {
    event.preventDefault();
-   var tr = $(this).parent().parent();
-   var tid = $(this).attr('id');
+
+      var tid = $(this).attr('id');
       $('#id_'+tid).remove();
       $('#'+tid).removeClass('teeth-color');
       $('#'+tid).removeClass('remCF');
